@@ -18,6 +18,7 @@ def f(m, d, y):
     print(dob)
     today = datetime.date.today()
     age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
+    # https://moonbooks.org/Articles/How-to-get-the-age-from-a-date-of-birth-DOB-in-python-/
     print("You are {}L of water.".format(water(age)))
     print("You are {} toilet hours.".format(toilet(age)))
     print("You are {} earths old.".format(earth(age)))
